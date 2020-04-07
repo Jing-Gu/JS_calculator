@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator-grid">
+      <div class="toggle">
+        <div id="toggle-off">
+          <svg
+            class="toggle-off"
+            style="width: 50px; height: 50px;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M17,7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7M7,15A3,3 0 0,1 4,12A3,3 0 0,1 7,9A3,3 0 0,1 10,12A3,3 0 0,1 7,15Z"
+            />
+          </svg>
+        </div>
+        <div id="toggle-on">
+          <svg
+            class="toggle-on"
+            style="width: 50px; height: 50px;"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M17,7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7M17,15A3,3 0 0,1 14,12A3,3 0 0,1 17,9A3,3 0 0,1 20,12A3,3 0 0,1 17,15Z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="output">
+        <div data-prev-operand class="prev-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </div>
+      <button data-all-clear class="span-two control">AC</button>
+      <button data-delete class="control">DEL</button>
+      <button data-operation class="mark bigger">÷</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation class="mark bigger">×</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation class="mark">＋</button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operation class="mark">－</button>
+      <button data-number>.</button>
+      <button data-number>0</button>
+      <button data-equal class="span-two mark bigger">=</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
